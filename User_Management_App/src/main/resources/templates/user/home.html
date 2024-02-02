@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
 	<head>
 		<meta charset="ISO-8859-1">
 		<title>Insert title here</title>
 	</head>
 	<body>
-		<h1>User After Login: Home Page</h1>
+		<section>
+			<h1>User After Login: Home Page</h1>
 		
-		<h3>Name : [[${user.fullName}]]</h3>
-		<h3>Email : [[${user.email}]]</h3>
-		<h3>Qualification : [[${user.qualification}]]</h3>
+			<h3>Name : [[${user.fullName}]]</h3>
+			<h3>Email : [[${user.email}]]</h3>
+			<h3>Qualification : [[${user.qualification}]]</h3>
+		</section>
 		
 		
 		<a href="/logout">Logout</a>
